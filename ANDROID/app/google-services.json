@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "88653892696",
+    "firebase_url": "https://eta-spot-app-1336.firebaseio.com",
+    "project_id": "eta-spot-app-1336",
+    "storage_bucket": "eta-spot-app-1336.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88653892696:android:57362d8c225c9831",
+        "android_client_info": {
+          "package_name": "com.etatransit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88653892696-4ackrd4pdq277mm699279r4u8eb7557u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.etatransit",
+            "certificate_hash": "c700c81b655e35227bafc0d1b211029f0b78ef23"
+          }
+        },
+        {
+          "client_id": "88653892696-ruv94ni51k1f0ng7ijeoee2n80rhg8o9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.etatransit",
+            "certificate_hash": "a78ead6ecb66670f598f20ce8cfe35cec04c8ea9"
+          }
+        },
+        {
+          "client_id": "88653892696-2l099iaj5oad0v8eqj9hjoj4sgg4ppah.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "88653892696-q1cbn5squl5on5gop9pshhp0hn39ohhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZkDStE9OVop2Xzykcx-MfkKRtCmaik08"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

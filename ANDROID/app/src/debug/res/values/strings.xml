@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--replace with your debug key : do not commit-->
+    <string name="google_maps_key"></string>
+
+</resources>

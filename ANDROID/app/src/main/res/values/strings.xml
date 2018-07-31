@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SPOT</string>
+    <string name="google_maps_key"></string>
+
+    <string name="mint_key">f347d81c</string>
+
+    <string name="text_drawer_open">Drawer Open</string>
+    <string name="text_drawer_closed">Drawer Closed</string>
+
+
+    <string name="text_please_select_an_agency_below">Please Select an Agency Below</string>
+    <string name="text_near_your_location">Near Your Location</string>
+    <string name="text_all_agencies">All Agencies</string>
+
+    <string name="text_select_an_agency">Select an Agency</string>
+    <string name="text_rideralert">Rider Alerts</string>
+    <string name="text_leave_feedback">Leave Feedback</string>
+    <string name="text_create_rider_alert">Create Rider Alert</string>
+    <string name="text_rate_our_app">Rate our App</string>
+    <string name="text_help">Help</string>
+
+
+    <string name="text_navigation_map">Map</string>
+    <string name="text_navigation_routes">Routes</string>
+    <string name="text_navigation_messages">Messages</string>
+
+
+    <string name="text_no_alerts">No Current Messages</string>
+
+    <string name="text_rider_alert">Configure a rider alert to notify you when the next bus is selected minutes away from this bus stop.</string>
+    <string name="use_stop_name_for_alert">Use stop name for alert.</string>
+
+    <string name="text_feedback_description">All fields are required.</string>
+    <string name="text_feedback_response">Thank you for participating in our feedback program. Your help is greatly appreciated.</string>
+    <string name="text_feedback_error_response">There was a problem submitting your feedback.  Please try again later</string>
+
+    <string-array name="day">
+        <item>Daily</item>
+        <item>Weekly</item>
+    </string-array>
+
+    <string-array name="minutes">
+        <item>5-10</item>
+        <item>10-15</item>
+        <item>15-20</item>
+        <item>20-25</item>
+        <item>25-30</item>
+    </string-array>
+
+    <string-array name="directions">
+        <item>Select Direction</item>
+        <item>NorthBound</item>
+        <item>SouthBound</item>
+        <item>EastBound</item>
+        <item>WestBound</item>
+    </string-array>
+
+    <string-array name="week">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="select_routes">Select Routes</string>
+    <string name="select_direction">Select Direction</string>
+    <string name="text_help_bullet_points">
+        <![CDATA[
+        <ul>
+        <li>The SPOT&#174; smartphone application utilizes GPS to identify your location and provided you with a list of the nearest transit agencies.</li><br/>
+        <li>No nearby agencies? Fear not! The app will display a list of all SPOT&#174;-powered agencies for you to choose from and plan your travel routes.</li><br/>
+        <li>Simply select your desired route(s) and click the map button to view the route status on an interactive map.</li><br/>
+        <li>Routes are color coded for convenience and ease of display. It’s incredibly easy to identify routes, stops, and plan your trip.</li><br/>
+        <li>Click on any stop to view current status and estimated times of arrival.</li><br/>
+        <li>On the route screen, click the Stops button to view additional information about your chosen route.</li><br/>
+        <li>The Stops screen displays names for all stops along the route, current estimated times of arrival, and shared route stops.</li><br/>
+        <li>Receive real-time updates about route information so that you can adjust your schedule accordingly.</li><br/>
+        <li>The main menu of the SPOT® application allows you to select your transit agency, leave feedback, rate our app, access helpful information, and connect with us via social media channels.</li><br/>
+        <li>Select your desired agency to load applicable routes.</li><br/>
+        <li>Please rate this app and leave feedback about improvements we could make to its functionality. Your input is highly valued to improve your overall experience!</li><br/>
+        </ul>
+        ]]>
+    </string>
+    <string name="txt_content">txt</string>
+</resources>

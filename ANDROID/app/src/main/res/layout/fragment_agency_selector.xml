@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+    <TextView
+        android:id="@+id/tvHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_please_select_an_agency_below"
+        style="@style/ETA.AgencySelector.Title"
+        />
+    <TextView
+        android:id="@+id/tvNOI"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Unable to connect to the internet.Please check your connection and try again."
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/agency_selector_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:clipToPadding="false"
+        />
+</LinearLayout>

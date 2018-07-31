@@ -1,0 +1,257 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:eta="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/full_layout"
+            android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:id="@+id/sub_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_subnavigation_bar"
+                    android:orientation="horizontal"
+                    android:background="@color/eta_background_subnavigation_bar"
+                    android:divider="@drawable/vertical_divider"
+                    android:dividerPadding="10dp"
+                    android:showDividers="middle"
+                    android:visibility="gone"
+                >
+                    <TextView
+                        android:id="@+id/sub_navigation_map"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/text_navigation_map"
+                        android:drawableBottom="@drawable/ic_navigation_map"
+                        style="@style/ETA.SubNavigation.Button"
+                    />
+                    <TextView
+                        android:id="@+id/sub_navigation_routes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/text_navigation_routes"
+                        android:drawableBottom="@drawable/ic_navigation_routes"
+                        style="@style/ETA.SubNavigation.Button"
+                    />
+                    <TextView
+                        android:id="@+id/sub_navigation_messages"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/text_navigation_messages"
+                        android:drawableBottom="@drawable/ic_navigation_messages"
+                        style="@style/ETA.SubNavigation.Button"
+                    />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/alert_layout"
+                        android:background="@color/eta_background_subnavigation_bar"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/alert_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/eta_message_alert_text_color"
+                            android:text="Alerts :  "/>
+
+                        <TextView
+                            android:id="@+id/alerts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/eta_message_alert"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:singleLine="true"
+                            android:focusable="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:text=""/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/full_layout"
+        >
+
+        </FrameLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:id="@+id/main_layout"
+            android:paddingTop="55dp"
+            android:paddingRight="2dp">
+            <Spinner
+                android:id="@+id/mapTypeSpinner"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible"
+                android:text=""
+                android:layout_gravity="right"
+                android:background="@drawable/maptypedropdown"
+                android:spinnerMode="dropdown"
+                />
+        </FrameLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ViewFavourites"
+            tools:context=".MainActivity"
+            android:paddingRight="4dp"
+            android:paddingTop="100dp">
+        <Button
+            android:id="@+id/Favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/clear_map_button"
+            android:visibility="gone"
+            android:text="View Favourites"
+            android:textSize="12sp"
+            android:layout_gravity="right"
+            />
+
+        </FrameLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/clearmap"
+            tools:context=".MainActivity"
+            android:paddingTop="150dp"
+            android:paddingRight="4dp">
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/clear_map_button"
+                android:visibility="invisible"
+                android:text="Clear Map"
+                android:textSize="12sp"
+                android:layout_gravity="right"
+                />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/sub_navigation_arrows"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_above="@id/full_layout"
+            android:orientation="horizontal"
+            android:visibility="visible"
+        >
+            <com.etatransit.view.TriangleView
+                android:id="@+id/sub_navigation_arrow_map"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                eta:triangleColor="@color/eta_background_subnavigation_bar"
+                android:visibility="invisible"
+            />
+            <com.etatransit.view.TriangleView
+                android:id="@+id/sub_navigation_arrow_routes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                eta:triangleColor="@color/eta_background_subnavigation_bar"
+                android:visibility="invisible"
+            />
+            <com.etatransit.view.TriangleView
+                android:id="@+id/sub_navigation_arrow_messages"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                eta:triangleColor="@color/eta_background_subnavigation_bar"
+                android:visibility="invisible"
+            />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/route_stops_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/agency_selector_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        ></FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/navigation_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+    >
+        <fragment
+            android:name="com.etatransit.fragment.NavigationDrawerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_navigation"
+        />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/right_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@android:color/white"
+    >
+        <fragment
+            android:name="com.etatransit.fragment.HelpFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="help"
+            tools:layout="@layout/fragment_help"
+        />
+
+        <fragment
+            android:name="com.etatransit.fragment.FeedbackFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="feedback"
+            tools:layout="@layout/fragment_help"
+        />
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

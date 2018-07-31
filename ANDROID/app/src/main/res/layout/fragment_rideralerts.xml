@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="8dp"
+    >
+    <LinearLayout
+        android:id="@+id/alertsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@color/eta_message_level_normal"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:maxWidth="220dp"
+            android:layout_gravity="center_vertical"
+            android:text="Rider Alerts "
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:id="@+id/alertsListClose"
+            android:src="@drawable/ic_close"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Existing Alerts"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"/>
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            android:visibility="visible"
+            android:id="@+id/alertList"></ListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Alerts"
+            android:padding="50dp"
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:id="@+id/no_alerts"
+            android:visibility="visible"
+            android:textColor="@android:color/darker_gray"/>
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/addRiderAlert"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/add_alert"
+            android:paddingLeft="5dp"
+            android:paddingRight="8dp"
+            android:layout_margin="10dp"
+            android:text="Add Rider Alert"
+            android:textSize="15sp"
+            android:layout_gravity="right"
+            android:background="@drawable/rounded_rectangle"/>
+    </LinearLayout>
+
+
+</LinearLayout>

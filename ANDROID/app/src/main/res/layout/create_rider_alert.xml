@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2481b7"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:text="@string/text_create_rider_alert"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+        <ImageView
+            android:id="@+id/createrider_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/feedback_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/text_rider_alert"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes: "
+                    android:textSize="16dp"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:entries="@array/minutes"
+                    android:prompt="@string/select_routes"
+                    android:id="@+id/minutes">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alert Name: "
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/alert_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:background="@drawable/edit_text_border"
+                    android:padding="11dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/user_alert_name"
+                android:text="@string/use_stop_name_for_alert"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/directionLayout"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direction: "
+                    android:textSize="16dp"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:entries="@array/directions"
+                    android:prompt="@string/select_direction"
+                    android:id="@+id/spinner_direction">
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Routes:  "
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16dp"
+                    />
+
+              <com.guna.libmultispinner.MultiSelectionSpinner
+                    android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                    android:hint="Route Name"
+                   android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                   android:id="@+id/simpleMultiSpinner"
+                  android:prompt="@string/select_routes"
+                   android:background="@android:drawable/btn_dropdown"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date: "
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/alert_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="16dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:background="@drawable/edit_text_border"
+                    android:windowSoftInputMode="stateHidden"
+                    android:focusableInTouchMode="false"
+                    android:drawableRight="@drawable/calender"
+                    android:editable="false"
+                    android:padding="11dp"
+                    android:clickable="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time: "
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+
+                <EditText
+                    android:id="@+id/alert_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="13dp"
+                    android:windowSoftInputMode="stateHidden"
+                    android:layout_marginTop="16dp"
+                    android:inputType="text"
+                    android:focusableInTouchMode="false"
+                    android:singleLine="true"
+                    android:padding="11dp"
+                    android:editable="false"
+                    android:drawableRight="@drawable/bell"
+                    android:background="@drawable/edit_text_border"
+                    android:clickable="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Repeat :"
+                    android:textSize="16dp"/>
+
+                <CheckBox
+                    android:id="@+id/is_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/alarm"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:id="@+id/alarmImage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textColor="#2481b7"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:id="@+id/repeat_settings"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/create_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="right"
+                android:text="Create Alert"
+                android:drawableLeft="@drawable/create_alert"
+                android:paddingLeft="8dp"
+                android:paddingRight="10dp"
+                android:textSize="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

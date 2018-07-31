@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="eta_actionbar_background">#333333</color>
+
+    <color name="eta_agency_selector_header_background">#666666</color>
+    <color name="eta_agency_selector_header_arrow">#80FFFFFF</color>
+
+    <color name="eta_navigation_label">#2481b7</color>
+
+    <color name="eta_background_subnavigation_bar">#333333</color>
+
+    <color name="eta_message_level_severe">#ff0000</color>
+    <color name="eta_message_level_high">#ee4e10</color>
+    <color name="eta_message_level_normal">#2481b7</color>
+    <color name="eta_message_alert_text_color">#ffffff</color>
+    <color name="eta_message_alert">#fbe14b</color>
+    <color name="list_background">#f0f0f0</color>
+</resources>

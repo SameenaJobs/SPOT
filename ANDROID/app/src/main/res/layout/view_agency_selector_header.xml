@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/eta_agency_selector_header_background"
+    android:padding="@dimen/padding_eta_agency_selector_header"
+>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+    >
+        <View
+            style="@style/ETA.AgencySelector.Arrow"
+        />
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ETA.AgencySelector.Header"
+        />
+        <View
+            style="@style/ETA.AgencySelector.Arrow"
+            android:layout_marginLeft="@dimen/margin_left_eta_agency_selector_right_arrow"
+        />
+    </LinearLayout>
+</RelativeLayout>

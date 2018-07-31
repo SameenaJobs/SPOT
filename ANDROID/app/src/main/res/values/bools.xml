@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="mint_debugging_enabled">true</bool>
+    <bool name="mint_logging_enabled">false</bool>
+</resources>
